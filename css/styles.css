@@ -1,15 +1,51 @@
+/* Основний колір тексту (абз.) #757575 */
+
+/* Вторинний колір тексту #212121 */
+
+/* Studio #000000; */
+
+/* h1 + Studio + button #ffffff; */
+
+/* Акцент + button + Web #2196F3; */
+
+/* Цвет button active #188CE8; */
+
+/* footer rgba(255, 255, 255, 0.6); */
+
+/* Основний колір фону #ffffff; */
+
+/* Вторинний колір фону #2F303A */
+
+/* Колір верхньої лінії #ECECEC */
+
+/* Колір кнопок фільтру портфоліо + Колір фону Наша команда #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-text-color: #fff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --rare-text-color: #000;
+  --accent-color: #2196f3;
+  --button-active-color: #188ce8;
+  --primary-bgc: #fff;
+  --secondary-bgc: #2f303a;
+  --team-bgc: #f5f4fa;
+  --decorativ-line-color: #ececec;
+}
+
 body {
-  background-color: #fff;
-  color: #757575;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgc);
 }
 
 /* <!-- Шапка сайту -- >  */
 .logo {
-  color: black;
+  color: var(--rare-text-color);
 }
 
 .logo-part {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .list {
@@ -17,24 +53,31 @@ body {
 }
 
 .site-nav .link {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contacts .link {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* <!-- Герой --> */
+.hero {
+  background-color: var(--secondary-bgc);
+}
+
+.hero-title {
+  color: var(--secondary-text-color);
+}
 
 /* <!-- Секція Особливості --> */
 .visually-hidden {
@@ -51,28 +94,71 @@ body {
 }
 
 .section-title {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
-.section-subtitle {
-  color: #212121;
+.section .subtitle {
+  color: var(--title-text-color);
 }
-/* Основний колір тексту (абз.) #757575 */
 
-/* Вторинний колір тексту #212121 */
+/* <!-- Секція Наша команда --> */
+.section.team {
+  background-color: var(--team-bgc);
+}
 
-/* Studio #000000; */
+.team.list {
+  background-color: var(--primary-bgc);
+}
+/* <!-- Підвал --> */
+.footer {
+  background-color: var(--secondary-bgc);
+}
 
-/* h1 + Studio + button #ffffff; */
+.footer .logo {
+  color: var(--secondary-text-color);
+}
 
-/* Акцент + Web #2196F3; */
+.address .post {
+  color: var(--secondary-text-color);
+}
 
-/* footer rgba(255, 255, 255, 0.6); */
+.address .post:hover,
+.address .post:focus {
+  color: var(--accent-color);
+}
 
-/* Основний колір фону #ffffff; */
+.address .link {
+  color: rgba(255, 255, 255, 0.6);
+}
 
-/* Вторинний колір фону 2F303A */
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
 
-/* Колір верхньої лінії ECECEC */
+/* Кнопки */
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgc);
+}
 
-/* Колір кнопок фільтру портфоліо + Колір фону Наша команда F5F4FA */
+.button.hero {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+.button.hero:hover,
+.button.hero:focus {
+  background-color: var(--button-active-color);
+}
+
+.button.primary {
+  color: var(--title-text-color);
+  background-color: var(--team-bgc);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
