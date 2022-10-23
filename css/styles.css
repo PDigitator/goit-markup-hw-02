@@ -28,6 +28,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
+  text-decoration: none;
 }
 
 .logo-part {
@@ -38,9 +39,9 @@ body {
   list-style: none;
 }
 
-.link {
+/* .link {
   text-decoration: none;
-}
+} */
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -48,6 +49,7 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -65,6 +67,7 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .contacts .link:hover,
@@ -167,6 +170,7 @@ body {
 
 .address .link {
   color: var(--footer-text-color);
+  text-decoration: none;
 }
 
 .address .link:hover,
@@ -216,6 +220,10 @@ body {
 .button.primary:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+}
+
+.portfolio .link {
+  text-decoration: none;
 }
 
 .portfolio .link:hover,
